@@ -1,4 +1,4 @@
-﻿//version 1.0.1
+﻿//version 1.0.2
 
 #target photoshop
 
@@ -37,9 +37,13 @@ function selectionColorFill(probeX, probeY)
 	
 	var pixelLoc = [probeX, probeY];
 	var colorSamplerRef = app.activeDocument.colorSamplers.add(pixelLoc);
-	
-	app.activeDocument.selection.fill(colorSamplerRef.color);
-	
+	try
+	{
+		app.activeDocument.selection.fill(colorSamplerRef.color);
+	}
+	catch(e)
+	{
+	}
 	
 	app.activeDocument.colorSamplers.removeAll();
 }
@@ -240,7 +244,7 @@ var sScreenPath = File.openDialog("Давай свой бэкграунд (оч�
 		["/screens/wp8/", "SplashScreenImage.png", 768,1024,"png"],
 	];
 	
-	processArray(aIconInfo, icoPic);
+	//processArray(aIconInfo, icoPic);
 	
 	var screenPic = (sScreenPath != undefined ? new File(String(sScreenPath)) : icoPic);
 	if (sScreenPath != undefined)
