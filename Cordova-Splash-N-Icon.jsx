@@ -244,7 +244,7 @@ var sScreenPath = File.openDialog("Давай свой бэкграунд (оч�
 		["/screens/wp8/", "SplashScreenImage.png", 768,1024,"png"],
 	];
 	
-	//processArray(aIconInfo, icoPic);
+	processArray(aIconInfo, icoPic);
 	
 	var screenPic = (sScreenPath != undefined ? new File(String(sScreenPath)) : icoPic);
 	if (sScreenPath != undefined)
