@@ -1,4 +1,4 @@
-﻿//version 1.0.2
+﻿//version 1.0.3
 
 #target photoshop
 
@@ -253,12 +253,14 @@ var sScreenPath = File.openDialog("Давай свой бэкграунд (оч�
 		["/screens/ios/", "Default@2x~universal~comcom.png", 1334,750,"png"],
 		["/screens/ios/", "Default@3x~universal~anyany.png", 2208,2208,"png"],
 		["/screens/ios/", "Default@3x~universal~anycom.png", 2208,1242,"png"],
-		["/screens/ios/", "Default@3x~universal~comany.png", 1242,2208,"png"],
+		["/screens/ios/", "Default@3x~universal~comany.png", 1242,2208,"png"]
+		/*
 		["/screens/windows/", "splashscreen.png", 620,300,"png"],
 		["/screens/windows/", "splashscreen.scale-100.png", 620,300,"png"],
 		["/screens/windows/", "SplashScreenPhone.scale-240.png", 1152,1920,"png"],
 		["/screens/windows8/", "splashscreen.png", 620,300,"png"],
 		["/screens/wp8/", "SplashScreenImage.png", 768,1024,"png"],
+		*/
 	];
 	
 	processArray(aIconInfo, icoPic);
